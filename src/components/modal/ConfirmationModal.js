@@ -5,6 +5,8 @@ import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import Button from '@material-ui/core/Button'
 import MUItheme from '../../themes/styled-components/MuiTheme'
+import ButtonGroup from '@material-ui/core/ButtonGroup'
+import Typography from '@material-ui/core/Typography'
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -14,10 +16,23 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     backgroundColor: theme.palette.background.paper,
-    border: '2px solid #000',
+    border: '1px solid #000',
     boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
+    padding: theme.spacing(0, 0, 3),
   },
+  modalHeading: {
+    padding: '0.5rem',
+    fontWeight: 'bold'
+  },
+  modalBody: {
+    padding: '1rem'
+  },
+  modalButtons: {
+    alignContent: 'center',
+    justifyContent: 'center',
+    margin: 'auto',
+    width: '100%'
+  }
 }));
 
 export default function TransitionsModal() {
@@ -47,6 +62,7 @@ export default function TransitionsModal() {
         onClick={handleOpen}> 
         APPROVED CHECKED PTS 
       </Button>
+      
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -61,10 +77,42 @@ export default function TransitionsModal() {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <h2 id="transition-modal-title">APPROVED PT</h2>
-            <p id="transition-modal-description">You are approving 2 Personal Trainers.</p>
-            <button type = "button"> OK </button>
-            <button type = "button"> CANCEL </button>
+            <Typography variant="body1" className={classes.modalHeading}>
+              APPROVED PT 
+            </Typography>
+            <hr></hr>
+            <div className={classes.modalBody}>
+              <p>You are approving 2 Personal Trainers.</p>
+              <ButtonGroup className={classes.modalButtons}>
+                <Button 
+                  size = "small"
+                  style = {{
+                      marginRight: 12,
+                      background: 'black',
+                      borderRadius: 5,
+                      width: '67px'
+                  }}
+                  variant = "contained" 
+                  color = "secondary"
+                  type = "button"> 
+                  OK 
+                </Button>
+
+                <Button 
+                  size = "small"
+                  style = {{
+                      background: '#985336',
+                      borderRadius: 5,
+                      width: '67px'
+                  }}
+                  variant = "contained" 
+                  color = "secondary"
+                  type = "button"> 
+                  CANCEL 
+                </Button>
+
+              </ButtonGroup>
+            </div>
           </div>
         </Fade>
       </Modal>

@@ -1,8 +1,7 @@
 // Sidebar component
-import React from 'react'
 import 'fontsource-roboto';
 import styled from "styled-components";
-import { withStyles, makeStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -19,7 +18,7 @@ const StyledTableCell = withStyles((theme) => ({
   },
   body: {
     fontSize: 14,
-  },
+  }
 }))(TableCell);
 
 const StyledTableRow = withStyles((theme) => ({
@@ -50,7 +49,7 @@ const table = () => {
             <Table aria-label="customized table">
                 <TableHead>
                     <TableRow>
-                        <StyledTableCell> <Checkbox /> </StyledTableCell>
+                        <StyledTableCell> <Checkbox style={{color: 'white'}} /> </StyledTableCell>
                         <StyledTableCell>LASTNAME</StyledTableCell>
                         <StyledTableCell>FIRSTNAME</StyledTableCell>
                         <StyledTableCell>MIDDLENAME</StyledTableCell>

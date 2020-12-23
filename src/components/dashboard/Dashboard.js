@@ -1,22 +1,26 @@
 // Sidebar component
 import React from 'react'
 import 'fontsource-roboto';
+import styled from "styled-components";
 import Typography from '@material-ui/core/Typography'
-import Container from '@material-ui/core/Container'
 import Table from '../table/Table'
 import ConfirmationModal from '../modal/ConfirmationModal'
-import MUItheme from '../../themes/styled-components/MuiTheme'
 
-const table = () => {
+const Div = styled.div`
+    padding-left: 10px;
+    padding-right: 10px
+`;
+
+const dashboard = () => {
     return (
-        <Container maxWidth="lg" theme={MUItheme}>
+        <Div>
             <Typography variant="h6" component="div">
                 PERSONAL TRAINER - FOR VERIFICATION
             </Typography>
             <ConfirmationModal />
             <Table />
-        </Container>    
+        </Div>    
     );
 }
 
-export default table;
+export default dashboard;

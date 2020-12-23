@@ -1,5 +1,5 @@
 //
-import React from 'react'
+
 import color from '../font-colors/TextColor'
 
 // This is for the component theming

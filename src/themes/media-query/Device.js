@@ -1,5 +1,4 @@
 //
-import React from 'react'
 
 // This is for the component theming of device media query
 
