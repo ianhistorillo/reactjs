@@ -8,9 +8,9 @@ import { ThemeProvider } from '@material-ui/core/styles'
 
 import Grid from '@material-ui/core/Grid'
 import Sidebar from '../sidebar/Sidebar'
-import Table from '../table/Table'
+import DashboardContent from '../dashboard/Dashboard'
 
-// Create a Dashboard component later
+// Dashboard
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           <Sidebar />
         </Grid>
         <Grid item xs={12} sm={9}>
-          <Table />
+          <DashboardContent />
         </Grid>
       </Grid>
     </ThemeProvider>
