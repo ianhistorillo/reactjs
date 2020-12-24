@@ -110,6 +110,7 @@ function MobileNavbar() {
                             <li> Workout Categories </li>
                             <li> Payments  </li>
                             <li> Incident Reports  </li>
+                            <li> Log out </li>
                         </Ul>
                     </AccordionDetails>
                   </Accordion>
