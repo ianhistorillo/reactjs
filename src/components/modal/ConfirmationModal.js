@@ -7,6 +7,8 @@ import Button from '@material-ui/core/Button'
 import MUItheme from '../../themes/styled-components/MuiTheme'
 import ButtonGroup from '@material-ui/core/ButtonGroup'
 import Typography from '@material-ui/core/Typography'
+import styled from "styled-components";
+import ClearIcon from '@material-ui/icons/Clear';
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -35,6 +37,23 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
+const Ul = styled.ul`
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 4rem;
+
+    li {
+      display: inline-block;
+    }
+
+    .float-right {
+      float: right;
+    }
+
+    .float-left {
+      float: left;
+    }
+`;
 export default function TransitionsModal() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
@@ -77,9 +96,18 @@ export default function TransitionsModal() {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <Typography variant="body1" className={classes.modalHeading}>
-              APPROVED PT 
-            </Typography>
+            <Ul>
+              <li className = "float-left">
+                <Typography variant="body1" className={classes.modalHeading}>
+                  APPROVED PT 
+                </Typography> 
+              </li>
+              <li className = "float-right"> 
+                <Typography variant="body1" className={classes.modalHeading}>
+                  <ClearIcon />
+                </Typography> 
+              </li>
+            </Ul>
             <hr></hr>
             <div className={classes.modalBody}>
               <p>You are approving 2 Personal Trainers.</p>
