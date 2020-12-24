@@ -119,6 +119,8 @@ export default function Sidebar() {
                 <li> Workout Categories </li>
                 <li> Payments  </li>
                 <li> Incident Reports  </li>
+                <li> Payments  </li>
+                <li> Logout  </li>
             </Ul>
         </Div>
     );
