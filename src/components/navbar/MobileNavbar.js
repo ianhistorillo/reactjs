@@ -24,8 +24,7 @@ const Accordion = withStyles({
       },
       '&$expanded': {
         margin: 'auto',
-      },
-      expanded: {},
+      }
     }
   })(MuiAccordion);
   
@@ -42,8 +41,7 @@ const Accordion = withStyles({
       },
       content: {
         margin: '0'
-      },
-      expanded: {},
+      }
   })(MuiAccordionSummary);
   
   const AccordionDetails = withStyles((theme) => ({
@@ -95,7 +93,7 @@ function MobileNavbar() {
         <AppBar color="primary" style = {{ background: '#131A2A'}}>
             <ToolBar>
                 <IconButton style = {{ color: 'white'}}>
-                  <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+                  <Accordion>
                     <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                         <MenuIcon>
                         </MenuIcon>

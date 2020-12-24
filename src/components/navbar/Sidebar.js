@@ -104,7 +104,7 @@ export default function Sidebar() {
             
             <Ul>
                 <li> 
-                    <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+                    <Accordion>
                         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                             <Typography> Personal Trainers </Typography>
                         </AccordionSummary>
