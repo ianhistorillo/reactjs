@@ -1,17 +1,17 @@
-// App Base
+// Dashboard Page
 
-import '../../themes/styles/App.css';
+import '../themes/styles/App.css';
 import React from 'react';
-import theme from '../../themes/styled-components/MuiTheme'
+import theme from '../themes/styled-components/MuiTheme'
 
 import { ThemeProvider } from '@material-ui/core/styles'
 
 import Grid from '@material-ui/core/Grid'
-import Sidebar from '../navbar/Sidebar'
-import MobileNav from '../navbar/MobileNavbar'
-import DashboardContent from '../dashboard/Dashboard'
+import Sidebar from '../components/navbar/Sidebar'
+import MobileNav from '../components/navbar/MobileNavbar'
+import DashboardContent from '../components/dashboard/Dashboard'
 
-import media from '../../themes/media-query/Device'
+import media from '../themes/media-query/Device'
 import styled from "styled-components";
 
 const Mobile = styled.div`
@@ -29,7 +29,7 @@ const Mobile = styled.div`
 
 // Dashboard
 
-function App() {
+function Dashboard() {
   return (
     <ThemeProvider theme={theme}>
       <Grid container spacing={2}>
@@ -47,4 +47,4 @@ function App() {
   );
 }
 
-export default App;
+export default Dashboard;

@@ -11,10 +11,6 @@ import MuiAccordion from '@material-ui/core/Accordion';
 import MuiAccordionSummary from '@material-ui/core/AccordionSummary';
 import MuiAccordionDetails from '@material-ui/core/AccordionDetails';
 
-import theme from '../../themes/styled-components/ComponentTheme'
-import media from '../../themes/media-query/Device'
-import Typography from '@material-ui/core/Typography';
-
 const Accordion = withStyles({
     root: {
       background: 'transparent',
@@ -61,17 +57,6 @@ const Logo = styled.div`
     margin-left: 5rem;
     text-align: center;
     justify: center;
-`;
-
-const Div = styled.div`
-    height: 1080px;
-    width: 100%;
-    background: ${theme.sidebar.background};
-    text-align: center;
-
-    @media ${media.desktop} {
-        display: block;
-    }
 `;
 
 const Ul = styled.ul`

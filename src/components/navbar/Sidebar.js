@@ -85,6 +85,10 @@ const Ul = styled.ul`
     .dropdown:hover {
         background-color: ${color.hover.primaryHover}
     }
+
+    .dropdown.active {
+        background-color: ${color.hover.primaryHover}
+    }
 `;
 
 export default function Sidebar() {
@@ -107,7 +111,7 @@ export default function Sidebar() {
                         <AccordionDetails>
                             <Typography>
                             <li className = "dropdown"> List </li>
-                            <li className = "dropdown"> For Verification </li>
+                            <li className = "dropdown active"> For Verification </li>
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
