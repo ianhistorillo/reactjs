@@ -46,6 +46,10 @@ const LoginForm = styled.div`
             width: 70%;
         }
     }
+
+    a {
+        text-decoration: none !important;
+    }
 `;
 
 function Login() {

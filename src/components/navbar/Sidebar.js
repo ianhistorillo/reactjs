@@ -89,6 +89,10 @@ const Ul = styled.ul`
     .dropdown.active {
         background-color: ${color.hover.primaryHover}
     }
+
+    a {
+      text-decoration: none !important;
+    }
 `;
 
 export default function Sidebar() {
