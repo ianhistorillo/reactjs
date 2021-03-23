@@ -102,7 +102,13 @@ export default function TransitionsModal() {
                   APPROVED PT 
                 </Typography> 
               </li>
-              <li className = "float-right"> 
+              <li className = "float-right" 
+              onClick={handleClose}
+              closeAfterTransition
+              BackdropComponent={Backdrop}
+              BackdropProps={{
+                timeout: 500,
+              }}> 
                 <Typography variant="body1" className={classes.modalHeading}>
                   <ClearIcon />
                 </Typography> 
