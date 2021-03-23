@@ -2,7 +2,7 @@
 
 import React from 'react';
 import '../themes/styles/App.css';
-import logo from '../images/logo.png';
+import logo from '../images/ian-login.jpg';
 import styled from "styled-components";
 
 import media from '../themes/media-query/Device'

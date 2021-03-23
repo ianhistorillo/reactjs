@@ -1,6 +1,6 @@
 // Sidebar component
 import React from 'react'
-import logo from '../../images/logo.png'
+import logo from '../../images/ian-login.jpg'
 import styled from "styled-components";
 import theme from '../../themes/styled-components/ComponentTheme'
 import media from '../../themes/media-query/Device'
@@ -104,8 +104,7 @@ export default function Sidebar() {
   
     return (
         <Div>
-            <img src = {logo} alt = "logo" width = "100%" />
-            
+        <Typography> IANWORKS </Typography>
             <Ul>
                 <li> 
                     <Accordion>
